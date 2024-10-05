@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game enjoyer</title>
+    <link rel="icon" type="image/x-icon" href="../img/Favicon.png" />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="../img/Favicon.png"
+        style="width: 75px; height: 75px; margin-right: 75px"
+        class="logo"
+      />
+      <h1>GAME ENJOYER</h1>
+    </header>
+    <nav>
+      <a href="../index.html">Sobre nosotros</a>
+      <a href="obtaculos.html">Juego de obstaculos (demo)</a>
+    </nav>
+    <div class="filter-container">
+      <select id="categoryFilter">
+        <option value="all">ALL</option>
+        <option value="action">Action</option>
+        <option value="free to play">Free to Play</option>
+        <option value="sport">Sport</option>
+        <option value="adventure">Adventure</option>
+      </select>
+    </div>
+
+    <div class="grid-container" id="gameGrid">
+      <!-- Action games -->
+      <div class="game-card" data-genre="action">
+        <img
+          class="game-img"
+          src="../img/Sparking Zero.jpg"
+          alt="Dragon Ball Sparking Zero"
+        />
+        <h3>Dragon Ball Sparking Zero</h3>
+        <p>
+          Dragon Ball Sparking Zero es un emocionante juego de lucha que
+          presenta intensas batallas, personajes icónicos y gráficos
+          impresionantes en 3D.
+        </p>
+        <button class="favorite-btn">Favorite</button>
+      </div>
+      <div class="game-card" data-genre="action">
+        <img class="game-img" src="../img/DRDR.jpg" alt="Pulp fiction" />
+        <h3>Dead Rising Deluxe Remastered</h3>
+        <p>
+          Dead Rising es un juego de acción y supervivencia donde los jugadores
+          enfrentan hordas de zombis en un centro comercial.
+        </p>
+        <button class="favorite-btn">Favorite</button>
+      </div>
+      <div class="game-card" data-genre="action">
+        <img class="game-img" src="../img/Cod.png" alt="Pulp fiction" />
+        <h3>Call of Duty: Black Ops 2</h3>
+        <p>
+          Call of Duty: Black Ops 2 es un shooter en primera persona que combina
+          campañas futuristas, multijugador dinámico y decisiones narrativas.
+        </p>
+        <button class="favorite-btn">Favorite</button>
+      </div>
+
+      <!-- free to play games -->
+      <div class="game-card" data-genre="free to play">
+        <img class="game-img" src="../img/Counter.jpg" alt="Shrek" />
+        <h3>Counter Strike 1.6</h3>
+        <p>
+          Counter-Strike 1.6 es un clásico juego de disparos en primera persona,
+          donde equipos de terroristas y antiterroristas luchan en mapas
+          estratégicos.
+        </p>
+        <button class="favorite-btn">Favorite</button>
+      </div>
+      <div class="game-card" data-genre="free to play">
+        <img class="game-img" src="../img/Destiny 2.jpg" alt="Shrek" />
+        <h3>Destiny 2</h3>
+        <p>
+          Destiny 2 es un juego de disparos en línea que combina elementos de
+          RPG, exploración espacial y cooperativo en un mundo vibrante.
+        </p>
+        <button class="favorite-btn">Favorite</button>
+      </div>
+      <div class="game-card" data-genre="free to play">
+        <img class="game-img" src="../img/Dota.jpg" alt="Up" />
+        <h3>Dota 2</h3>
+        <p>
+          Dota 2 es un MOBA competitivo donde dos equipos luchan para destruir
+          la base enemiga, utilizando héroes con habilidades únicas y
+          estrategias.
+        </p>
+        <button class="favorite-btn">Favorite</button>
+      </div>
+
+      <!-- sport games -->
+      <div class="game-card" data-genre="sport">
+        <img class="game-img" src="../img/Fifa 25.jpg" alt="sda" />
+        <h3>EA FC 25</h3>
+        <p>
+          EA FC 25 es un juego de fútbol que ofrece realismo, jugabilidad fluida
+          y modos variados, destacando la competición y el trabajo en equipo.
+        </p>
+        <button class="favorite-btn">Favorite</button>
+      </div>
+      <div class="game-card" data-genre="sport">
+        <img class="game-img" src="../img/Nba.jpg" alt="Resplandor" />
+        <h3>NBA 2K25</h3>
+        <p>
+          NBA 2K 25 es un simulador de baloncesto que ofrece gráficos realistas,
+          jugabilidad intensa y modos de carrera y multijugador envolventes.
+        </p>
+        <button class="favorite-btn">Favorite</button>
+      </div>
+      <div class="game-card" data-genre="sport">
+        <img class="game-img" src="../img/Top spin.jpg" alt="Resplandor" />
+        <h3>Top Spin 2K25</h3>
+        <p>
+          Top Spin 2K 25 es un simulador de tenis que ofrece jugabilidad
+          realista, personajes personalizables y emocionantes competiciones en
+          canchas diversas.
+        </p>
+        <button class="favorite-btn">Favorite</button>
+      </div>
+
+      <!-- adventure games -->
+      <div class="game-card" data-genre="adventure">
+        <img class="game-img" src="../img/BOTW.jpg" alt="adventure game 1" />
+        <h3>TLOZ: breath of the wild</h3>
+        <p>
+          TLOZ: breath of the wild es un juego de aventuras en un vasto mundo
+          abierto, lleno de exploración y desafíos.
+        </p>
+        <button class="favorite-btn">Favorite</button>
+      </div>
+      <div class="game-card" data-genre="adventure">
+        <img
+          class="game-img"
+          src="../img/Blackmyth.jpg"
+          alt="adventure game 2"
+        />
+        <h3>Blackmyth Wukong</h3>
+        <p>
+          Black Myth: Wukong es un juego de acción y aventura inspirado en la
+          mitología china, con impresionantes gráficos y combates fluidos.
+        </p>
+        <button class="favorite-btn">Favorite</button>
+      </div>
+      <div class="game-card" data-genre="adventure">
+        <img
+          class="game-img"
+          src="../img/Dark souls.jpg"
+          alt="adventure game 2"
+        />
+        <h3>Dark Souls 3</h3>
+        <p>
+          Dark Souls 3 es un RPG de acción desafiante, con un mundo
+          interconectado, enemigos memorables y un sistema de combate
+          estratégico y profundo.
+        </p>
+        <button class="favorite-btn">Favorite</button>
+      </div>
+    </div>
+
+    <div id="gameModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modalgameImage" class="modal-game-img" alt="game Image" />
+        <h2 id="gameTitle"></h2>
+        <p id="gameDescription"></p>
+      </div>
+    </div>
+    <script src="../Js/filtro.js"></script>
+    <script src="../Js/favoritos.js"></script>
+    <script src="../Js/modal.js"></script>
+  </body>
+</html>

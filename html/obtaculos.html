@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juego de Esquivar Obstáculos</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #f0f0f0;
+        margin: 0;
+      }
+
+      #game {
+        position: relative;
+        width: 400px;
+        height: 600px;
+        background-color: #fff;
+        overflow: hidden;
+        border: 2px solid #333;
+      }
+
+      #player {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background-color: blue;
+        left: 180px; /* Posición inicial en el centro */
+        bottom: 10px; /* Mantener en la parte inferior */
+      }
+
+      #obstacle {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background-color: red;
+        top: -40px; /* Inicialmente fuera de la vista */
+      }
+
+      #score {
+        margin-top: 10px;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Esquiva los Obstáculos</h1>
+    <div id="game">
+      <div id="player"></div>
+      <div id="obstacle"></div>
+    </div>
+    <div id="score">Puntuación: 0</div>
+    <script src="../Js/game.js"></script>
+  </body>
+</html>

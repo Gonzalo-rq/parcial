@@ -1,0 +1,229 @@
+.filter-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.favorite-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.favorite-btn.favorited {
+  background-color: red;
+  content: "Favorito";
+}
+
+header {
+  background-color: #240986;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+header .logo {
+  position: absolute;
+  left: 400px;
+  font-size: 24px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #ffffff;
+}
+
+nav {
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+
+a {
+  padding: 25px;
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+main {
+  background-color: #573cb6;
+  padding: 10px;
+}
+
+img.show {
+  width: 250px;
+  height: 300px;
+  margin-left: 55px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.game-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.game-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  max-width: 300px;
+  width: 80%;
+}
+
+.modal-content img {
+  width: auto;
+  height: 30%;
+  object-fit: cover;
+}
+
+.modal-content h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.modal-content p {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.close {
+  cursor: pointer;
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.contact-container {
+  display: flex;
+  max-width: 900px;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 500px;
+}
+
+.image-section {
+  flex: 1;
+  overflow: hidden;
+}
+
+.image-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 70%;
+}
+
+.form-section {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+}
+
+.form-section h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+  position: relative;
+  text-align: center;
+}
+
+.form-section h2::after {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background-color: #66c141;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.form-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-section input,
+.form-section textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.4);
+  color: #333;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.form-section textarea {
+  resize: none;
+  height: 100px;
+}
+
+.form-section button {
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-section button:hover {
+  background-color: #218838;
+}
+.form-section input::placeholder,
+.form-section textarea::placeholder {
+  color: rgba(51, 51, 51, 0.7);
+}
